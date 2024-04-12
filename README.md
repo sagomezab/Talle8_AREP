@@ -80,7 +80,7 @@ Se crea un post con el contenido "Segunda prueba" y se comprueba el correcto fun
 ![](img/Prueb2Browser.png)
 
 ### VIDEO
-* [Video Probatorio]()
+* [Video Probatorio](img/VideoLAB8.mp4)
 
 ## BUILT WITH
 
