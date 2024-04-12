@@ -34,7 +34,7 @@ function loadPostMsg() {
             this.responseText;
         }
     };
-    xhttp.open("POST", "https://b1dulwo4tj.execute-api.us-east-1.amazonaws.com/Beta");
+    xhttp.open("POST", "https://vderdpbef2.execute-api.us-east-1.amazonaws.com/postService");
     xhttp.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
     xhttp.send(message);
 }
