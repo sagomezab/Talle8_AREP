@@ -8,11 +8,7 @@
 
 Este laboratorio consiste en diseñar y desarrollar un sistema tipo Twitter, donde los usuarios pueden realizar publicaciones de hasta 140 carácteres y estas se registran en un stream único de posts.
 
-El proyecto también implica el despliegue de los archivos estaticos en AWS S3 para que esté disponible en internet, y luego se agrega seguridad utilizando JWT con el servicio Cognito de AWS. Posteriormente, se divide el monolito en tres microservicios independientes utilizando AWS Lambda, y se despliegan allí. Además, se implementa un servicio API Gateway de AWS para exponer lo servicios alojados en Lambda.
-
 El repositorio en GitHub incluye todo el código desarrollado, así como informes detallados sobre la arquitectura utilizada, las pruebas realizadas y un video que demuestra el funcionamiento y la configuración adecuada del experimento.
-
-![](img/Arquitectura.png)
 
 ## GETTING STARTED
 
@@ -78,6 +74,16 @@ Una vez accedemos al servicio con usuario autenticado, observaremos la aplicaci�
 Se crea un post con el contenido "Segunda prueba" y se comprueba el correcto funcionamiento:
 
 ![](img/Prueb2Browser.png)
+
+## DESIGN DECISIONS
+
+Se intentó realizar la aplicación usando Quarkus y conectándola con funciones lambda de AWS, pero no se logró desarrollar el experimento siguiendo el tutorial suministrado, debido a que no contamos con los permisos necesarios para obtener las credenciales de IAM.
+
+Por esta razón, se optó por diseñar e implementar la siguiente arquitectura, que hace uso de microservicios, y obedece a la siguiente imagen:  
+
+![](img/Arquitectura.png)
+
+Para implementarla, el código fuente se dividió en tres microservicios independientes utilizando funciones AWS Lambda, mapeando los métodos correspondientes para acceder a las funcionalidades de la aplicación. Posteriormente, se implementó un servicio API Gateway de AWS para consumir y exponer los servicios alojados en las funciones Lambda. Luego, se subieron los archivos estáticos de la aplicación en AWS S3 para que estén disponible en internet, y finalmente se agregó una capa de seguridad utilizando el pool de usuarios creado a través del servicio Cognito de AWS, para que solamente quienes estuvieran autenticados tuvieran acceso.
 
 ### VIDEO
 * [Video Probatorio](img/VideoLAB8.mp4)
