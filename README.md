@@ -21,7 +21,7 @@ El repositorio en GitHub incluye todo el código desarrollado, así como informe
 Para utilizar la aplicación, debe clonar el repositorio con el siguiente comando:
 
 ```
-https://github.com/sagomezab/Talle8_AREP.git
+https://github.com/sagomezab/Taller8_AREP.git
 ```
 
 Este paso le permitirá visualizar el código y ejecutar cada tarea según sea necesario.
