@@ -1,0 +1,4 @@
+edu\escuelaing\arem\ASE\app\PostService.class
+edu\escuelaing\arem\ASE\app\Main.class
+edu\escuelaing\arem\ASE\app\MongoUtil.class
+edu\escuelaing\arem\ASE\app\PostDAO.class
