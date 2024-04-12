@@ -7,7 +7,7 @@ El proyecto también implica el despliegue de los archivos estaticos en AWS S3 p
 
 El repositorio en GitHub incluye todo el código desarrollado, así como informes detallados sobre la arquitectura utilizada, las pruebas realizadas y un video que demuestra el funcionamiento y la configuración adecuada del experimento.
 
-![](img/arquitectura.png)
+![](img/Arquitectura.png)
 
 ## GETTING STARTED
 
